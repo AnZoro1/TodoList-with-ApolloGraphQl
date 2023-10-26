@@ -1,0 +1,29 @@
+.todo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #7dbcea;
+    border-radius: 5px;
+    gap: 10px;
+    width: 500px;
+    height: 40px;
+    margin-bottom: 7px;
+    color: #000000;
+    font-weight: bold;
+
+    img,
+    input[type="checkbox"] {
+        vertical-align: middle;
+        cursor: pointer;
+    }
+
+    img {
+        height: 20px;
+        cursor: pointer;
+        color: red;
+    }
+}
+
+.selectTodo {
+    background-color: rgb(126, 0, 0);
+}

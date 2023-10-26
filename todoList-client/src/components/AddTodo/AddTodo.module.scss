@@ -1,0 +1,13 @@
+form {
+
+    input {
+        width: 500px;
+        height: 40px;
+        border: none;
+        border-radius: 8px;
+    }
+
+    ::-webkit-input-placeholder {
+        text-align: center;
+    }
+}
