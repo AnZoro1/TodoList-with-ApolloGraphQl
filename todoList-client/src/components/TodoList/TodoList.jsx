@@ -26,10 +26,10 @@ const TodoList = () => {
     });
     const [updateTodo, { loading: loadingUpdate, error: errorUpdate, data: dataUpdate }] = useMutation(UPDATE_POST);
 
-    if (loadingQuery || loadingRemove) {
+    if (loadingQuery || loadingRemove || loadingUpdate) {
         return <div>Loading...</div>;
     }
-    if (errorQuery || errorRemove) {
+    if (errorQuery || errorRemove || errorUpdate) {
         return <div>{errorQuery ? errorQuery.message : errorRemove ? errorRemove.message : errorUpdate ? errorUpdate.message : null}</div>;
     }
     return (
